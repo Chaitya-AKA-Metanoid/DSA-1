@@ -1,0 +1,24 @@
+hero_stats =  {
+    "Batman" : 99,
+    "Superman" : 96 ,
+    "Flash" : 90
+}
+
+print(hero_stats)
+#add
+hero_stats["Wonder woman"] = 94
+print(hero_stats)
+#update
+hero_stats["Flash"] = 92
+print(hero_stats)
+#delete
+del hero_stats["Superman"]
+print(hero_stats)
+
+
+#set
+city = set()
+city.add("Gotham")
+city.add("Star City")
+city.add("Gotham")
+print(city)

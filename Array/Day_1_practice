@@ -1,0 +1,26 @@
+arr = [1,2,3,4,5,6,7]
+print(arr)
+#array operations
+
+#acces 
+print("First element of array is : ",arr[0])
+arr[-1] #last element print
+
+#modification 
+arr[1] = 20
+print("Modification operation (adding 20 at 1) : ", arr)
+#common op 
+arr.append(4)
+print("Append operation (appending 4 at last position) : ", arr)
+arr.pop()
+print("Pop operation (remove last element): ", arr)
+arr.remove(20)
+print("Remove operation (Removing specific elements): ", arr)
+arr.insert(1,-20)
+print("Insert operation (Inserting at a specific position): ", arr)
+
+del arr[1]
+print("Delete operation : ", arr)
+#slicing 
+print(arr[1:3])
+
