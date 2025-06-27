@@ -20,5 +20,5 @@ print(hero_stats)
 city = set()
 city.add("Gotham")
 city.add("Star City")
-city.add("Gotham")
+city.add("Gotham")#wont be added
 print(city)
