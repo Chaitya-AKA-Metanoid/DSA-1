@@ -1,0 +1,1 @@
+git add Restart/notes/day01_algorithmic_thinking.md

@@ -1,0 +1,38 @@
+## **Refined Day 2 Notes**
+
+### **The Goal of Big O**
+Big O notation is used to describe the **worst-case complexity** of an algorithm. Its primary purpose is to provide a standardized way to compare how the **number of operations** (runtime) or **memory usage** of different algorithms will grow as the **input size(n)** becomes very large.
+
+---
+Core Concepts
+
+**Time Complexity:** Measures how the **number of operations** an algorithm performs scales with the size of the input (n). It's not about the exact time in seconds, but about the algorithm's efficiency and rate of growth.
+
+**Space Complexity:** Measures how the **additional memory** (or space) an algorithm requires scales with the size of the input (n). This doesn't include the space taken up by the input itself.
+
+**The Simplification Rule:** We simplify expressions by focusing on the big picture. This involves two rules:
+    1.  **Drop Constant Factors:** O(2n) becomes O(n). Constants are ignored because they depend on the specific machine, not the algorithm's fundamental design.
+    2.  **Drop Lower-Order Terms:** O(n^2 + n) becomes O(n^2). As $n$ gets very large, the fastest-growing term is the only one that meaningfully impacts performance.
+
+---
+### **Common Big O Runtimes**
+
+**O(1) - Constant:**
+    **Description:** The algorithm takes the same number of steps regardless of the input size.
+    **Example:** Accessing an element in a list by its index (`my_list[3]`).
+
+**O(\log n) - Logarithmic:**
+    **Description:** The runtime grows very slowly as the input size increases. Typically seen in algorithms that **halve the problem size** with each step.
+    **Example:** Binary Search on a sorted array.
+
+**O(n) - Linear:**
+    **Description:** The runtime grows in a direct, one-to-one relationship with the input size. Doubling the input roughly doubles the work.
+    **Example:** Looping through all elements of a list once.
+
+**O(n \log n) - Linearithmic:**
+    **Description:** A combination of linear and logarithmic behavior. Often found in efficient "divide and conquer" algorithms.
+    **Example:** Efficient sorting algorithms like Merge Sort or Quick Sort.
+
+**O(n^2) - Quadratic:**
+    **Description:** The runtime grows by the square of the input size. This is common in algorithms with a nested loop over the same data.
+    **Example:** A nested loop where you compare every element to every other element.
