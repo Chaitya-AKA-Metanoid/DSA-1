@@ -1,0 +1,44 @@
+# Day 4 Notes: Singly Linked Lists
+
+## 1. Core Idea
+
+A **linked list** is a linear data structure where elements are not stored in contiguous memory locations. Instead, elements are stored in **Nodes** that are linked together using pointers.
+
+---
+
+## 2. Structural Components
+
+A Linked List's structure is defined by:
+
+* **Node**: The fundamental unit of the list. Each `Node` object contains two parts:
+    * `data`: The value stored within the node.
+    * `next`: A reference (pointer) to the next node in the sequence. For the last node, this is `None`.
+
+* **Head**: A pointer that marks the beginning of the list. It is the entry point to the entire data structure. If `head` is `None`, the list is empty.
+
+* **(Optional) Tail**: A pointer that marks the end of the list. This is an optimization that allows for $O(1)$ `append` operations.
+
+---
+
+## 3. Array vs. Linked List: The Key Difference
+
+* **Array**: Stores elements in a **contiguous** block of memory.
+    * **Pro**: Fast indexed access ($O(1)$).
+    * **Con**: Slow insertions/deletions at the beginning or middle ($O(n)$).
+
+* **Linked List**: Stores elements in **non-contiguous** memory locations, scattered throughout memory.
+    * **Pro**: Fast insertions/deletions at the beginning ($O(1)$).
+    * **Con**: Slow indexed access and searching ($O(n)$).
+
+---
+
+## 4. Common Operations to Implement
+
+* Append to end
+* Prepend to beginning (append at head)
+* Insert into middle
+* Delete from end
+* Delete from start
+* Delete from middle
+* Search
+* Display
